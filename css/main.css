@@ -1,0 +1,343 @@
+@font-face {
+	font-family: 'FiraCode';
+	src: url(../Fonts/FiraCode-Regular.otf);
+}
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;  /*при указании напр. width 50% не учитываются все отступы но с 
+	этой строкой в эти 50% будут входить и все отступы*/
+
+}
+a{
+	text-decoration: none;
+	color: #ABB2BF;
+}
+li{
+	text-decoration: none;
+	list-style: none;
+}
+
+
+html{
+	height: 100%;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	color: #ABB2BF;
+	background: #555556;
+	font-size: 16px;
+	font-family: 'FiraCode', sans-serif;
+	line-height: 135%;
+	float: left;
+	max-width: 100%;
+	
+}
+
+.container{
+	max-width: 100%;
+	margin: 0px auto;
+}
+
+header{
+	max-width: 80%;
+	margin-left: 10%;
+	/* float: left; */
+	/* margin-left: 10%; */
+	background-color: #282C33;
+	/* margin-left: 10%; */
+
+	height: 2%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+
+
+}
+
+
+.Logo-Name{
+	margin-top: 32px;
+  }
+.logo{
+	background: #2c3036;
+	width: 1em;
+	height:1em;
+	float: left;
+  }
+.logo-element{
+	fill:white;
+	width: 0.25em;
+	height: 0.25em;
+  }
+.name{
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 8px;
+  }
+
+
+
+
+.header-lattice{
+	color:#C778DD;
+	font-size: 1em;
+	margin-left: 32px;
+	margin-right: -8px;
+}
+.header-text{
+	font-size: 1em;
+	margin: 0;
+}
+.header-text li{
+	 display: inline-block;/* сделать строчки по горизонтали */
+}
+.menu{
+	display: flex;
+	flex-flow: row nowrap;
+	margin-top: 32px;
+	margin-bottom: 8px;
+}
+.language-choice{
+	font-size: 1em;
+	font-weight: 600;
+	margin-left: 32px;
+}
+.diagonal-right{
+	display:block;
+	float: right;
+	margin-right: 4px;
+	border-left: 2px solid #ABB2BF;
+	height: 6px;
+	margin-top: 6px;
+	/* display: inline-block; */
+	transform: rotate(45deg);
+}
+ .diagonal-left{
+	display:block;
+	float: right;
+	
+	border-left: 2px solid #ABB2BF;
+	height: 6px;
+	margin-right: 1px;
+	margin-left: 4px;
+	margin-top: 6px;
+	transform: rotate(-45deg);
+}
+
+.diagonal-left-reverse{
+	display:block;
+	float: right;
+	
+	border-left: 2px solid #ABB2BF;
+	height: 6px;
+	margin-right: 1px;
+	margin-left: 4px;
+	margin-top: 6px;
+	transform: rotate(45deg);
+}
+.diagonal-right-reverse{
+	display:block;
+	float: right;
+	margin-right: 4px;
+	border-left: 2px solid #ABB2BF;
+	height: 6px;
+	margin-top: 6px;
+	/* display: inline-block; */
+	transform: rotate(-45deg);
+}
+.language-choice-back{
+	position: absolute;
+	background: #2c3036;
+	border: 1px solid #fff;
+	max-width: 36px;
+	width: 36px;
+	height: 66px;
+	/* top: 25px;
+	right:160px; */
+	margin-top: 5px;
+	margin-left: 25px;
+
+	text-align: center;
+	border-radius: 5px;
+}
+
+.language-choice2{
+	margin-top: 8px;
+}
+
+.center-element{
+	background: #2c3036;
+	max-width: 80%;
+	margin-left: 10%;
+	padding-top: 62px;
+	/* overflow: auto; */
+}
+.center-element::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.violet-text{
+	color:#C778DD;
+	padding-top: 20px;
+}
+#standart-text{
+	padding-top: 32px;
+}
+
+.Contact-btn{
+	background: #2c3036;
+	border: 1.5px solid #C778DD;
+	color: #ffffff;
+	max-width: 152px;
+	max-height: 37px;
+	margin-top: 32px;
+	padding:8px 16px 8px 16px ;
+	text-align: center;
+	font-size: 16px;
+}
+
+#section-one{
+	background: #2c3036;
+	max-width: 57%;
+	/* display:inline-block; */
+	float:left;
+}
+
+#section-one h1{
+	color: #ffffff;
+}
+
+.section-two{
+	max-width: 43%;
+	float:right;
+	position:relative;
+}
+
+
+
+/* Draw Logo-------------------------- */
+.draw-logo{
+	width: 155px;
+	height: 155px;
+	margin-bottom: 80px;
+	background: #2c3036;
+	position: absolute;
+	right: 380px;
+
+	z-index: 1;
+}
+#draw-element-1{
+	width: 37.5px;
+	height: 38.75px;
+	float: right;
+	border-top: 1.5px solid #C778DD;
+	border-right: 1.5px solid #C778DD;
+}
+#draw-element-2{
+	width: 40px;
+	height: 38.75px;
+	float: right;
+	border-top: 1.5px solid #C778DD;
+	border-bottom: 1.5px solid #C778DD;
+	border-left: 1.5px solid #C778DD;
+}
+
+#draw-element-3{
+	width: 77.5px;
+	height: 38.75px;
+	border-bottom: 1.5px solid #C778DD;
+}
+
+#draw-element-4{
+	width: 38.75px;
+	height: 38.75px;
+	float: right;
+	border-left: 1.5px solid #C778DD;
+	border-right: 1.5px solid #C778DD;
+}
+
+
+#draw-element-5{
+	width: 38.75px;
+	height: 38.75px;
+	float: right;
+
+	border-bottom: 1.5px solid #C778DD;
+	border-left: 1.5px solid #C778DD;
+}
+#draw-element-6{
+	width: 40px;
+	height: 38.75px;
+	float: right;
+	border-bottom: 1.5px solid #C778DD;
+}
+#draw-element-7{
+	width: 38.75px;
+	height: 38.75px;
+	
+	border-left: 1.5px solid #C778DD;
+}
+
+#draw-element-8{
+	width: 38.75px;
+	height: 38.75px;
+	float: left;
+	border-left: 1.5px solid #C778DD;
+	border-right: 1.5px solid #C778DD;
+}
+#draw-element-9{
+	width: 38.75px;
+	height: 38.75px;
+	float: right;
+	border-bottom: 1.5px solid #C778DD;
+	border-right: 1.5px solid #C778DD;
+}
+#draw-element-10{
+	width: 38.75px;
+	height: 38.75px;
+	float: right;
+	border-bottom: 1.5px solid #C778DD;
+	border-left: 1.5px solid #C778DD;
+}
+#draw-element-11{
+	width: 38.75px;
+	height: 38.75px;
+	float: right;
+	border-bottom: 1.5px solid #C778DD;
+}
+
+#draw-element-12{
+	width: 38.75px;
+	height: 38.75px;
+	float: left;
+	border-bottom: 1.5px solid #C778DD;
+	border-left: 1.5px solid #C778DD;
+}
+#draw-element-13{
+	width: 40px;
+	height: 38.75px;
+	float: left;
+	border-bottom: 1.5px solid #C778DD;
+	border-right: 1.5px solid #C778DD;
+}
+/* -------------------------------------- */
+
+#portrait{
+	width: 457px;
+	height: 386px;
+	position:absolute;
+	right: 100px;
+	z-index: 2;
+}
+
+.center-element2{
+	background: #2c3036;
+	clear: both;
+	height: 150px;
+}
